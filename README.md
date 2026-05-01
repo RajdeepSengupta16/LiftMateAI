@@ -1,53 +1,107 @@
-# Welcome to your Lovable project
+# FitAI LiftMate Buddy
 
-## Project info
+Your AI-powered fitness companion for personalized workout guidance, progress tracking, and pose estimation.
 
-**URL**: https://lovable.dev/projects/4716f5b8-7bd3-427e-b155-acded74d9b09
+## Features
 
-## How can I edit this code?
+- **AI Chat Interface** - Get personalized fitness advice and workout guidance from your AI coach
+- **Workout Library** - Browse and explore a comprehensive collection of exercises
+- **Pose Estimation** - Real-time pose detection to ensure proper form during workouts
+- **Goal Setting** - Define and track your fitness goals
+- **Progress Dashboard** - Monitor your fitness journey with visual progress tracking
+- **Workout Sessions** - Create and manage customized workout sessions
+- **Responsive Design** - Works seamlessly on desktop and mobile devices
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18+ with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Package Manager**: Bun
+- **Linting**: ESLint
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4716f5b8-7bd3-427e-b155-acded74d9b09) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 16+ (or Bun)
+- npm, yarn, or bun package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd fit-ai-liftmate-buddy
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Install dependencies
+npm install
+# or
+bun install
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+# Start the development server
+npm run dev
+# or
+bun run dev
+```
 
-**Use GitHub Codespaces**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+### Building for Production
+
+```sh
+# Build the application
+npm run build
+# or
+bun run build
+
+# Preview the production build
+npm run preview
+# or
+bun run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── ChatInterface   # AI chat component
+│   ├── GoalSetting     # Goal setting interface
+│   ├── PoseEstimation  # Pose detection component
+│   ├── ProgressDashboard # Progress tracking
+│   ├── WorkoutSession  # Workout session management
+│   ├── WorkoutLibrary  # Workout catalog
+│   ├── Navigation      # Navigation component
+│   └── ui/             # Reusable UI components
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── assets/             # Static assets
+└── styles/             # Global styles
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the MIT License.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
